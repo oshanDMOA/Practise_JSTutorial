@@ -29,16 +29,18 @@ if (TotalPrice<=20) {
     ShppingCost=3       
 } else {
     ShppingCost=0 
-}
+} 
 
 
 // combining  conditions - logical opearator
 // if TotalPrice over $20 OR you have AmazonPrime
+var TotalPrice = 22;
+var AmazonPrime = true;
 
-if(!(TotalPrice > 20 || AmazonPrime === true)){
-     //give free shipment
-     } else {
-        //don't
+if(AmazonPrime || TotalPrice > 20){
+    console.log("You are eligible for free shipment!");
+} else {
+    console.log("You are not eligible for free shipment.");
 }
 
 
