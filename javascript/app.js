@@ -2,7 +2,7 @@ var name = "some-name"
 console.log("some message from javascript file")
 
 
-
+//  conditions - if else statments
 var TotalPrice = 19
 var ShppingCost;
 
@@ -16,3 +16,29 @@ if (TotalPrice<=20) {
 } else {
     ShppingCost = 0
 }
+
+// below 10 Dolloers  => 5$ shipping const
+// below  10 Dolloers  => 3$ shipping const
+// otherwise => 0euro
+
+// example 2
+
+  if(TotalPrice<=10) {
+    ShppingCost=5
+} else if (TotalPrice<=20) {
+    ShppingCost=3       
+} else {
+    ShppingCost=0 
+}
+
+
+// combining  conditions - logical opearator
+// if TotalPrice over $20 OR you have AmazonPrime
+
+if(!(TotalPrice > 20 || AmazonPrime === true)){
+     //give free shipment
+     } else {
+        //don't
+}
+
+
